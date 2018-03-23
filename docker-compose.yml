@@ -41,6 +41,9 @@ services:
             - "10022:22"
         env_file:
             - /var/opt/gitlab/.env
-
+    redmine:
+        image: sameersbn/redmine:3.4.4-2
+        depends_on:
+            - db
               
    
